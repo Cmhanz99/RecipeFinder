@@ -122,7 +122,7 @@ function App() {
 
   return (
     <div className='main_app'>
-      <h1>🍳 Recipe Finder</h1>
+      <h1>🍳 ReciPeer</h1>
 
       {/* Search Bar */}
       <div className="header_input">
