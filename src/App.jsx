@@ -24,7 +24,7 @@ function App() {
 
   // Search for recipes
   function fetchRecipes() {
-    if (!food.trim()) return; // Prevent empty searches
+    if (!food.trim()) return; 
     
     setIsLoading(true);
     
@@ -40,7 +40,7 @@ function App() {
       });
   }
 
-  // Get random recipe
+  //Random recipe
   function getRandomRecipe() {
     setIsLoading(true);
     
@@ -220,7 +220,7 @@ function App() {
               className="modal-save" 
               onClick={() => toggleFavorite(selectedRecipe)}
             >
-              {isFavorite(selectedRecipe.idMeal) ? "Remove Favorite" : "Save Recipe"}
+              {isFavorite(selectedRecipe.idMeal) ? "Remove" : "Save"}
             </button>
             <h2 className="modal-title">{selectedRecipe.strMeal}</h2>
             <img 
@@ -241,6 +241,10 @@ function App() {
           </div>
         </div>
       )}
+
+      <div className="footer_app">
+        <p>© 2025 @Hanz Christian Galleto Magbal | Serving you the best recipes 🍽️</p>
+      </div>
     </div>
   );
 }
